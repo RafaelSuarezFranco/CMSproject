@@ -3,6 +3,12 @@
 Bennos Chaotic Soul	
 */
 
+#login {
+        color: white;
+        padding: 20px;
+        margin-top: 20px;
+        font-size: 15px;
+}
 /* Basics
 ------------------------------ */
 html {

@@ -15,6 +15,11 @@ if (!defined('WEBPATH')) die();
 	<link rel="stylesheet" href="<?php echo $_zp_themeroot ?>/zen.css" type="text/css" />
 </head>
 
+<div id="login">
+<?php printUserLogin_out(); ?>
+</div>
+
+
 <body>
 <?php zp_apply_filter('theme_body_open'); ?>
 
@@ -29,7 +34,6 @@ if (!defined('WEBPATH')) die();
 	</div>
 
 <div id="main">
-
     <div id="albums">
 		<?php while (next_album()): ?>
 
@@ -49,11 +53,13 @@ if (!defined('WEBPATH')) die();
 </div>
 <?php printPageListWithNav("« prev", "next »"); ?>
 </div>
+
 <hr class="hr-bottom" />
 </div>
 
 </div>
 <?php zp_apply_filter('theme_body_close'); ?>
+
 </body>
 
 </html>
